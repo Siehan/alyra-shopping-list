@@ -2,11 +2,11 @@ import Product from "./Product";
 import { useState } from "react";
 
 const ShoppingList = (props) => {
-  const { shopping, removeFromShoppingList /*filter, setFilter */ } = props;
+  const { shopping, removeFromShoppingList /*filter, setFilter*/ } = props;
   const [filter, setFilter] = useState("");
 
-  const handleInputChange = (event) => {
-    setFilter(event.target.value);
+  const handleInputChange = (e) => {
+    setFilter(e.target.value);
   };
 
   const filteredShopping = shopping.filter((el) => el.startsWith(filter));
@@ -21,7 +21,8 @@ const ShoppingList = (props) => {
         <input
           type="search"
           value={filter}
-          onChange={(e) => setFilter(e.target.value)}
+          //onChange={(e) => setFilter(e.target.value)}
+          onChange={handleInputChange}
           placeholder="Rechercher dans votre liste des courses ..."
           aria-label="Chercher"
           className="form-control"
