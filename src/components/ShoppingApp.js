@@ -4,7 +4,7 @@ import AddProductForm from "./AddProductForm";
 import AddPopularProduct from "./AddPopularProduct";
 
 const ShoppingApp = () => {
-  const [shopping, setShopping] = useState([]); //"cumin", "curry", "café";
+  const [shopping, setShopping] = useState([]); //"cumin", "curry", "café"
 
   const [filter, setFilter] = useState("");
 
