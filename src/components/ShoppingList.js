@@ -12,8 +12,9 @@ const ShoppingList = (props) => {
   const filteredShopping = shopping.filter((el) => el.startsWith(filter));
 
   return (
+    //<h2 className="mb-3 h4">Produits à acheter ({shopping.length}):</h2> (mettre en dehors de react pour commenter)
     <>
-      <h2 className="mb-3 h4">Produits à acheter ({shopping.length}):</h2>
+      <h2 className="mb-3 h4">Vous avez {shopping.length} produits à acheter :</h2>
       <div className="input-group mb-3">
         <span role="img" aria-label="search" className="input-group-text">
           🔎
@@ -41,7 +42,6 @@ const ShoppingList = (props) => {
           </button>
         </p>
       )}
-
       <ol className="list-group mb-3 shadow">
         {filteredShopping.map((el) => {
           return (
