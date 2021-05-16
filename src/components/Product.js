@@ -5,9 +5,9 @@ const Product = (props) => {
   };
 
   return (
-    <div className="d-flex align-items-center justify-content-between">
+    <div className="d-flex align-items-center justify-content-between text-danger fs-5">
       {product}
-      <button className="btn btn-sm btn-warning" onClick={handleButtonClick}>
+      <button className="btn btn-sm btn-warning fs-6" onClick={handleButtonClick}>
         <span role="img" aria-hidden>
           ✖️
         </span>{" "}

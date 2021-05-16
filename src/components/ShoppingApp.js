@@ -41,7 +41,7 @@ const ShoppingApp = () => {
       </section>
       <section className="col-lg-4">
         <div className="bg-light border p-4">
-          <h2 className="mb-3 h4">Ajouter un produit :</h2>
+          <h2 className="fs-4 text mb-3 h4">Ajouter un produit :</h2>
           <AddProductForm shopping={shopping} addToShoppingList={addToShoppingList} />
           <AddPopularProduct shopping={shopping} addToShoppingList={addToShoppingList} />
         </div>

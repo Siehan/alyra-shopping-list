@@ -1,4 +1,5 @@
-/* ./src/index.css */
 body {
   font-family: "Kiwi Maru", sans-serif;
+  /*background-image: linear-gradient(120deg, #4faa1b 0%, #3caadd 100%);*/
+  background-image: linear-gradient(120deg, hsla(197, 89%, 65%, 0.377) 0%, #11a8ee 100%);
 }
